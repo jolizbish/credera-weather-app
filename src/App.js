@@ -1,23 +1,59 @@
-import logo from './logo.svg';
 import './App.css';
+import Forecast from './forecast/Forecast';
+import SingleDay from './singleDay/SingleDay';
 
 function App() {
+  const today = new Date();
+  const days = {
+    0: 'Sunday',
+    1: 'Monday',
+    2: 'Tuesday',
+    3: 'Wednesday',
+    4: 'Thursday',
+    5: 'Friday',
+    6: 'Saturday'
+  }
+  const months = {
+    0: 'Jan',
+    1: 'Feb',
+    2: 'Mar',
+    3: 'Apr',
+    4: 'May',
+    5: 'Jun',
+    6: 'Jul',
+    7: 'Aug',
+    8: 'Sep',
+    9: 'Oct',
+    10: 'Nov',
+    11: 'Dec'
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <div className="Location">
+        {/* <img src="../public/location-pin.png" className="Location" alt="location" /> */}
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Dallas, TX
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </div>
+      <p className="Date">
+        {
+          days[today.getDay()]
+        }, {
+          months[today.getMonth()]
+        } {
+          today.getDate()
+        }, {
+          today.getFullYear()
+        }
+      </p>
+      <Forecast />
+      <div className="upcoming">
+          <SingleDay />
+          <SingleDay />
+          <SingleDay />
+          <SingleDay />
+          <SingleDay />
+      </div>
     </div>
   );
 }
