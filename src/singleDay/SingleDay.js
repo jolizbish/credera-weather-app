@@ -5,10 +5,13 @@ const SingleDay = ({ isFahrenheit, forecast, day }) => {
     const celciusTemp = Math.round(forecast?.temp.max -273.15);    
 
     return (
-        <div className="single-day">
-            <p>{day}</p>
-            <div className="weather-icon" style={{ backgroundImage: `url(/${forecast?.weather[0].main}.png)`, backgroundSize: "38px", height: 36, width: 38}}></div>
-            <p>{isFahrenheit ? fahrenheitTemp : celciusTemp}°</p>
+        <div class="single-day">
+            <div className="divider"></div>
+            <div className="info">
+                <p>{day}</p>
+                <div className="weather-icon" style={{ backgroundImage: `url(/${forecast?.weather[0].main}.png)`, backgroundSize: "38px", height: 36, width: 38}}></div>
+                <p>{isFahrenheit ? fahrenheitTemp : celciusTemp}°</p>
+            </div>
         </div>
     );
 }

@@ -46,22 +46,21 @@ class Forecast extends React.Component {
     render() {
         return (
             <div className="forecast">
-                <div className="overview" style={{ backgroundImage: "url(/dallas.png)", backgroundSize: "670px", height: 368, width: 670 }}>
-                    <div id="big-cloud-1" style={{ backgroundImage: "url(/big-cloud-1.png)", backgroundSize: "155px", height: 101, width: 155}} alt="Cloud 1"></div>
-                    <div id="big-cloud-2" style={{ backgroundImage: "url(/big-cloud-2.png)", backgroundSize: "213px", height: 125, width: 213}} alt="Cloud 2"></div>
+                <div className="overview" >
+                    <div id="big-cloud-1" alt="Cloud 1"></div>
+                    <div id="big-cloud-2" alt="Cloud 2"></div>
                     <Today forecast={this.state.currentWeather} isFahrenheit={this.state.isFahrenheit}/>
                     <Toggle isFahrenheit={this.state.isFahrenheit} handleToggle={this.handleToggle} />
                 </div>
                 <div className="upcoming">
-                    <SingleDay forecast={this.state.fiveDayForecast[0]} isFahrenheit={this.state.isFahrenheit} day={shortDays[this.calculateWeekday(this.props.today.getDay(), 0)]}/>
-                    <div className="divider"></div>
-                    <SingleDay forecast={this.state.fiveDayForecast[1]} isFahrenheit={this.state.isFahrenheit} day={shortDays[this.calculateWeekday(this.props.today.getDay(), 1)]} />
-                    <div className="divider"></div>
-                    <SingleDay forecast={this.state.fiveDayForecast[2]} isFahrenheit={this.state.isFahrenheit} day={shortDays[this.calculateWeekday(this.props.today.getDay(), 2)]} />
-                    <div className="divider"></div>
-                    <SingleDay forecast={this.state.fiveDayForecast[3]} isFahrenheit={this.state.isFahrenheit} day={shortDays[this.calculateWeekday(this.props.today.getDay(), 3)]} />
-                    <div className="divider"></div>
-                    <SingleDay forecast={this.state.fiveDayForecast[4]} isFahrenheit={this.state.isFahrenheit} day={shortDays[this.calculateWeekday(this.props.today.getDay(), 4)]} />
+                    {this.state.fiveDayForecast.map((day,index)=> {
+                        return <SingleDay 
+                            key={index} 
+                            forecast={day} 
+                            isFahrenheit={this.state.isFahrenheit} 
+                            day={shortDays[this.calculateWeekday(this.props.today.getDay(), 0)]}
+                        />
+                    })}
                 </div>
             </div>
         );

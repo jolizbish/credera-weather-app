@@ -1,10 +1,22 @@
-.single-day {
+.info {
     width: 133px;
     height: 142px;
     background-color: #FFFFFF;
     color: #525151;
+    display: inline-block;
 }
 
 .weather-icon {
     margin: auto;
+}
+
+.divider {
+    height: 142px;
+    background-color: #979797;
+    width: 1px;
+    display: inline-block;
+}
+.single-day {
+    display: flex;
+    flex-direction: row;
 }

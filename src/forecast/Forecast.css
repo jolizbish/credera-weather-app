@@ -14,12 +14,6 @@
     border-right: 1px solid #979797;
 }
 
-.divider {
-    height: 142px;
-    background-color: #979797;
-    width: 1px;
-}
-
 .today {
     position: absolute;
     color: #65AED5;
@@ -29,6 +23,10 @@
 .toggle {
     margin-top: 20px;
     margin-right: 15px;
+}
+
+.single-day {
+    display: inline-block;
 }
   
 /* 
