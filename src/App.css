@@ -22,3 +22,63 @@
     font-size: 16px;
     margin-bottom: 15px;
 }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to higher resolution desktops
+  */
+  
+  @media (min-width: 1025px) {
+    .app {
+        text-align: center;
+        color: #FFFFFF;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .app {
+        text-align: center;
+        color: #FFFFFF;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .location-pin {
+        display: inline-block;
+        margin-right: 5px;
+    }
+    
+    .location {
+        display: inline-block;
+        font-size: 20px;
+    }
+    
+    .date {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Portrait)
+    ##Screen = B/w 320px to 767px
+  */
+  
+  @media (min-width: 320px) and (max-width: 767px) {
+    
+    /* CSS */
+    
+  }

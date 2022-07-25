@@ -9,17 +9,17 @@
     }, 
     {
       "src": "dallas.png",
-      "sizes": "670x368",
+      "sizes": "670x368 335x174",
       "type": "image/png"
     },
     {
       "src": "big-cloud-1.png",
-      "sizes": "101x155",
+      "sizes": "101x155 50x77",
       "type": "image/png"
     },
     {
       "src": "big-cloud-2.png",
-      "sizes": "125x213",
+      "sizes": "125x213 62x106",
       "type": "image/png"
     },
     {
@@ -34,6 +34,11 @@
     },
     {
       "src": "Rain.png",
+      "sizes": "40x40",
+      "type": "image/png"
+    },
+    {
+      "src": "few_clouds.png",
       "sizes": "40x40",
       "type": "image/png"
     }

@@ -6,6 +6,7 @@
 
 .main-weather-icon {
     display: inline-block;
+    height: 40px;
 }
 
 .current-details {
