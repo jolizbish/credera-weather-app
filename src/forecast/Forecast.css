@@ -38,3 +38,7 @@
     background-color: #979797;
     width: 1px;
 }
+
+.today {
+    position: absolute;
+}

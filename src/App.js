@@ -1,18 +1,18 @@
-import { useState } from 'react';
 import './App.css';
 import Forecast from './forecast/Forecast';
 import { longDays, shortMonths } from './lookups';
 
 const App = () => {
-  const [today, setToday] = useState(new Date());
+  const today = new Date();
 
   return (
-    <div className="App">
-      <div className="Location">
+    <div className="app">
+      <div >
         {/* <img src="../public/location-pin.png" className="Location" alt="location" /> */}
-        <p>
+        <div className="location-pin" style={{ backgroundImage: "url(/location-pin.png)", backgroundSize: "12px", height: 15, width: 12}}></div>
+        <div className="location">
           Dallas, TX
-        </p>
+        </div>
       </div>
       <p className="Date">
         {

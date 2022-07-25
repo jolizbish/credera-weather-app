@@ -2,11 +2,11 @@
   "short_name": "React App",
   "name": "Create React App Sample",
   "icons": [
-    // {
-    //   "src": "location-pin.png",
-    //   "sizes": "24x24",
-    //   "type": "image/png"
-    // }, 
+    {
+      "src": "location-pin.png",
+      "sizes": "24x24",
+      "type": "image/png"
+    }, 
     {
       "src": "dallas.png",
       "sizes": "670x368",

@@ -2,7 +2,16 @@ p {
   font-size: 24;
 }
 
-.App {
+.app {
   text-align: center;
   color: #FFFFFF;
+}
+
+.location-pin {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.location {
+  display: inline-block;
 }
