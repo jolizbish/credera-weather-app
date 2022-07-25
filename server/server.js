@@ -5,7 +5,7 @@ const axios = require('axios');
 
 app.get('/getDallasWeather', (req, res) => {
     // Dallas long/lat and API key are hardcoded under id and appid respectively
-    const API = `https://api.openweathermap.org/data/3.0/onecall?lat=32.7767&lon=-96.7970&exclude=hourly,minutely,alerts&appid=0e6ea649950d06f4b853a11b0b07a454`;
+    const API = `https://api.openweathermap.org/data/3.0/onecall?lat=32.7767&lon=-96.7970&exclude=hourly,minutely,alerts&appid=`;
     axios.get(API)
         .then(response => {
                 res.header('Access-Control-Allow-Origin', '*')
