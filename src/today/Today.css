@@ -1,0 +1,16 @@
+.temperature {
+    display: inline-block;
+    font-size: 48px;
+    margin-left: 20px;
+}
+
+.main-weather-icon {
+    display: inline-block;
+}
+
+.current-details {
+    display: inline-block;
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 5px;
+}

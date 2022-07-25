@@ -43,7 +43,7 @@ class Forecast extends React.Component {
                 <div className="overview" style={{ backgroundImage: "url(/dallas.png)", backgroundSize: "670px", height: 368, width: 670 }}>
                     <div id="big-cloud-1" style={{ backgroundImage: "url(/big-cloud-1.png)", backgroundSize: "155px", height: 101, width: 155}} alt="Cloud 1"></div>
                     <div id="big-cloud-2" style={{ backgroundImage: "url(/big-cloud-2.png)", backgroundSize: "213px", height: 125, width: 213}} alt="Cloud 2"></div>
-                    <Today forecast={this.state.current} fahrenheit={this.state.fahrenheit}/>
+                    <Today forecast={this.state.currentWeather} fahrenheit={this.state.fahrenheit}/>
                     <Toggle fahrenheit={this.state.fahrenheit} />
                 </div>
                 <div className="upcoming">

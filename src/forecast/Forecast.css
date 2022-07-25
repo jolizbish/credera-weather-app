@@ -19,8 +19,8 @@
 
 #big-cloud-2 {
     position: relative;
-    top: 60px;
-    left: 315px;
+    top: 70px;
+    left: 275px;
 }
 
 .upcoming {
@@ -41,4 +41,6 @@
 
 .today {
     position: absolute;
+    color: #65AED5;
+    margin-top: 20px;
 }
