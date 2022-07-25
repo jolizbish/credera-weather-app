@@ -53,12 +53,12 @@ class Forecast extends React.Component {
                     <Toggle isFahrenheit={this.state.isFahrenheit} handleToggle={this.handleToggle} />
                 </div>
                 <div className="upcoming">
-                    {this.state.fiveDayForecast.map((day,index)=> {
+                    {this.state.fiveDayForecast.map((day, index)=> {
                         return <SingleDay 
                             key={index} 
                             forecast={day} 
                             isFahrenheit={this.state.isFahrenheit} 
-                            day={shortDays[this.calculateWeekday(this.props.today.getDay(), 0)]}
+                            day={shortDays[this.calculateWeekday(this.props.today.getDay(), index)]}
                         />
                     })}
                 </div>
