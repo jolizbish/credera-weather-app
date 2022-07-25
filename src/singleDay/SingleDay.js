@@ -5,7 +5,7 @@ const SingleDay = ({ isFahrenheit, forecast, day }) => {
     const celsiusTemp = Math.round(forecast?.temp.max -273.15);    
 
     return (
-        <div class="single-day">
+        <div className="single-day">
             <div className="divider"></div>
             <div className="info">
                 <p>{day}</p>

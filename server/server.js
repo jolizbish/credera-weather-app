@@ -12,7 +12,7 @@ app.get('/getDallasWeather', (req, res) => {
                 res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept')
                 res.send(response.data)
             }).catch(err => {
-                console.log('ERROR:', err)
+                console.error('ERROR:', err)
                 res.send(err);
             })
 })
