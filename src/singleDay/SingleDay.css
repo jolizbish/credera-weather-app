@@ -1,0 +1,10 @@
+.single-day {
+    width: 133px;
+    height: 142px;
+    background-color: #FFFFFF;
+    color: #525151;
+}
+
+.weather-icon {
+    margin: auto;
+}

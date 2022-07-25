@@ -2,16 +2,41 @@
   "short_name": "React App",
   "name": "Create React App Sample",
   "icons": [
+    // {
+    //   "src": "location-pin.png",
+    //   "sizes": "24x24",
+    //   "type": "image/png"
+    // }, 
     {
-      "src": "location-pin.png",
-      "sizes": "24x24",
-      "type": "image/png"
-    }, {
       "src": "dallas.png",
       "sizes": "670x368",
       "type": "image/png"
+    },
+    {
+      "src": "big-cloud-1.png",
+      "sizes": "101x155",
+      "type": "image/png"
+    },
+    {
+      "src": "big-cloud-2.png",
+      "sizes": "125x213",
+      "type": "image/png"
+    },
+    {
+      "src": "Clouds.png",
+      "sizes": "40x40",
+      "type": "image/png"
+    },
+    {
+      "src": "Clear.png",
+      "sizes": "40x40",
+      "type": "image/png"
+    },
+    {
+      "src": "Rain.png",
+      "sizes": "40x40",
+      "type": "image/png"
     }
-
   ],
   "start_url": ".",
   "display": "standalone",

@@ -4,9 +4,5 @@ p {
 
 .App {
   text-align: center;
-}
-
-.upcoming {
-  display: flex;
-  flex-direction: row;
+  color: #FFFFFF;
 }

@@ -1,6 +1,6 @@
 import './Today.css';
 
-function Today() {
+const Today = ({ forecast, fahrenheit }) => {
   return (
     <div className="Today">
         Today
