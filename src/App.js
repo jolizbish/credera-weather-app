@@ -8,13 +8,12 @@ const App = () => {
   return (
     <div className="app">
       <div >
-        {/* <img src="../public/location-pin.png" className="Location" alt="location" /> */}
         <div className="location-pin" style={{ backgroundImage: "url(/location-pin.png)", backgroundSize: "12px", height: 15, width: 12}}></div>
         <div className="location">
           Dallas, TX
         </div>
       </div>
-      <p className="Date">
+      <div className="date">
         {
           longDays[today.getDay()]
         }, {
@@ -24,7 +23,7 @@ const App = () => {
         }, {
           today.getFullYear()
         }
-      </p>
+      </div>
       <Forecast day={today.getDay()}/>
     </div>
   );
