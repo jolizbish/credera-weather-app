@@ -9,6 +9,7 @@ const SingleDay = ({ isFahrenheit, forecast, day }) => {
             <div className="divider"></div>
             <div className="info">
                 <p>{day}</p>
+                {/* NOTE: left this inline style so it could render the correct weather icon conditionally */}
                 <div className="weather-icon" style={{ backgroundImage: `url(/${forecast?.weather[0].main}.png)`, backgroundSize: "38px", height: 36, width: 38}}></div>
                 <p>{isFahrenheit ? fahrenheitTemp : celciusTemp}°</p>
             </div>

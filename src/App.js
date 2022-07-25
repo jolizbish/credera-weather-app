@@ -8,7 +8,7 @@ const App = () => {
     return (
         <div className="app">
             <div>
-                <div className="location-pin" style={{ backgroundImage: "url(/location-pin.png)", backgroundSize: "12px", height: 15, width: 12}}></div>
+                <div className="location-pin"></div>
                 <div className="location">Dallas, TX</div>
             </div>
             <div className="date">

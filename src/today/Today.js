@@ -8,6 +8,7 @@ const Today = ({ forecast, isFahrenheit }) => {
     return (
         <div className="today">
             <div className="temperature">{isFahrenheit ? fahrenheitTemp : celciusTemp}°</div>
+            {/* NOTE: left this inline style so it could render the correct weather icon conditionally */}
             <div className="main-weather-icon" style={{ backgroundImage: `url(/${mainIcon}.png)`, backgroundSize: "40px", height: 40, width: 40}}></div>
             <div className="current-details">
                 <div>{forecast?.weather[0].description}</div>
